@@ -35,6 +35,8 @@
 
 # PRACTICE - PLATFORM
 
+
+
 # 2 варианта клонирования:
 # HTTPS - будет запрашивать юзернейм и пароль
 # SSH - не будет запрашивать, т.к. комп будет привязан к данному аккаунту
@@ -58,6 +60,56 @@
 # git push name branch - отправляет файл на удаленный репозиторий 
 # git push origin master - в первое время будем использовать свой удаленный репозиторий
 # git reset filename - удаляет файл из staging arrea (index)
+
+# Lection by Adilet
+# 1. Регистрация в GitHub|Gitlab|Bitbucket
+
+# 2. Обновить систему и установить git
+# sudo apt-get update - проверяет что есть и обновляет
+# sudo apt-get upgrade - не просто обновляет, а еще и обновляет все версии пакетов
+# sudo apt-get install git - устанавливает конкретный пакет (git)
+
+# MacOS
+# brew update
+# brew upgrade
+# brew install git
+
+# 3. Проверить установку
+# git --version 
+
+# 4. Создать ssh ключ и добавить на github
+# ssh-keygen
+
+# 5. Прочитываем 
+# cat ~/.ssh/id_rsa.pub
+# копируем ключ и идем на Github -> settings -> SSH and GPG keys -> New SSH Key создаем, именуем (например: my_comp_Acer) и вставляем скопированный ключ
+
+# 6. Настраиваем git (достаточно настроить email & Github username)
+# чтобы он знал, куда подключаться, когда будем отправлять свой код
+# git config --global user.email "ataikasymbekov@gmail.com" press Enter
+# git config --global user.name "VincentHacker" (github username) press Enter
+# git config --list - проверка
+
+# 7. Открываем папку и инициализируем
+# git init - Открытая папка становится гит-репозиторием
+
+
+
+# git push --set-upstream origin test
+# мы не создали ветку мастер, мы создали ветку тест и сразу туда запушили
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
